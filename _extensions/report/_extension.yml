@@ -1,0 +1,22 @@
+title: Report
+author: Carl Villads Priisholm
+version: 1.0.0
+quarto-required: ">=1.4.0"
+contributes:
+  formats:
+    common:
+      shift-heading-level-by: -1
+    pdf:
+      documentclass: article
+      papersize: a4
+      fontsize: 10pt
+      geometry:
+        - margin=2.4cm
+      fig-pos: H
+      code-block-bg: "#FAFAFA"
+      code-block-border-left: "#E2E2E2"
+      include-in-header: report-header.tex
+    typst:
+      template-partials:
+        - typst-template.typ
+        - typst-show.typ
